@@ -1,6 +1,9 @@
+<% require 'pry' %>
 <% if @student.active == false %> 
 <h1> This student is currently inactive. </h1> 
-<% else 
+<% else %>
  <h1> This student is currently active. </h1> 
     <% end %> 
 <h1><%= @student.to_s %></h1>
+<%binding.pry%>
+<%= active_student_path(@student) %> 

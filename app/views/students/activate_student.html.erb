@@ -1,0 +1,7 @@
+<% if @student.active == "false" %>
+  <%= @student.active = "true" %>
+  <div> <%= link_to (student.to_s, activate_student_path(@student))%></div>
+<% else %>
+  <%= @student.active = "false" %>
+  <div> <%= link_to (student.to_s, activate_student_path(@student))%></div>
+<% end %>

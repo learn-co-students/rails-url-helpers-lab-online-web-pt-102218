@@ -21,6 +21,7 @@ end
 describe 'Show page' do
   before do
     @student = Student.create!(first_name: "Daenerys", last_name: "Targaryen")
+    # byebug
   end
 
   it 'renders properly' do
